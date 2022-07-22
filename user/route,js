@@ -1,0 +1,21 @@
+
+
+
+///
+
+const express = require('express');
+
+const controller =  require('./controller');
+
+const middleware = require('./middleware')
+
+const router = express.Router();
+
+router.post('/', controller.create); //In index.js already defined 'app.use('/users', userRouter)' so no need of again '/users', Only '/' enough
+
+router.get('/', middleware.logRequest, controller.index);
+
+//Async
+router.get('/:id', controller.show);
+
+module.exports = router;
