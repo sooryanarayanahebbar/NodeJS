@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "321da7a3-3625-4bbb-864f-61526d99b330",
+		"name": "NodeJS-Practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20736623"
+	},
+	"item": [
+		{
+			"name": "Get Hello",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Soorya\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Create-Soorya",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\":\"Sooryanarayana Hebbar\",\r\n    \"email\":\"snhebbar@test.com\",\r\n    \"phone\":\"09972243285\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Create -Public",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\":\"John Smit\",\r\n    \"email\":\"johnsmit@test.com\",\r\n    \"phone\":\"08765798\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Index",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\":\"Sooryanarayana Hebbar\",\r\n    \"email\":\"snhebbar@test.com\",\r\n    \"phone\":\"09972243285\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Show-Async",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\":\"Sooryanarayana Hebbar\",\r\n    \"email\":\"snhebbar@test.com\",\r\n    \"phone\":\"09972243285\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/62d9029f506bf5efba5119e5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"62d9029f506bf5efba5119e5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
